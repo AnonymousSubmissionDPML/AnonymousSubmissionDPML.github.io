@@ -1,0 +1,23 @@
+# Settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+permalink: pretty
+future: true
+timezone: America/New_York
+url: ""
+title: "Private ML"
+description: "A publicly available leaderboard for the community to track progress in differentially private machine learning."
+
+# Excludes
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+plugins_dir:
+  - "jekyll-github-metadata"

@@ -1,0 +1,157 @@
+---
+layout: default
+title: Private Image Classification
+---
+
+<p class="text-center" style="font-size: 1.25rem;">
+  <!-- This list features differentially private image classification methods, complete with third-party validations. -->
+</p>
+
+<!-- <p style="font-size: 1.25rem;"><strong>
+Submit a new <a href="https://github.com/robust-ml/robust-ml.github.io/issues/new?template=submit-defense.md">defense</a> or <a href="https://github.com/robust-ml/robust-ml.github.io/issues/new?template=submit-analysis.md">analysis</a>.
+</strong></p> -->
+
+<div id="leaderboard" class="text-center" style="font-size: 1.25rem;">
+    <a class="btn btn-secondary" href="#CIFAR-10_heading">CIFAR-10</a>
+    <!-- <a class="btn btn-secondary" href="#FMNIST_heading">FMNIST</a> -->
+    <!-- <a class="btn btn-secondary" href="#MNIST_heading">MNIST</a> -->
+    <a class="btn btn-secondary" href="#IMAGENET_heading">ImageNet-1K</a>
+    <!-- <a class="btn btn-secondary" href="#ImageNet_CIFAR-100_heading">CIFAR-100 (with public ImageNet-1K)</a> -->
+    <!-- <a class="btn btn-secondary" href="#JFT300M_Places365_heading">Places365</a> -->
+    <a class="btn btn-secondary" href="#CheXpert_heading">CheXpert</a>
+    <a class="btn btn-secondary" href="#EyePACS_heading">EyePACS</a>
+</div>
+
+<!-- <section class="container" id="MNIST_heading"></section>
+  <p class="text-center" style="font-size: 1.25rem;">
+    MNIST
+  </p>
+  {% include table.html id="MNIST" src=site.data.MNIST published=true %}
+</section>
+
+<section class="container" id="FMNIST_heading"></section>
+  <p class="text-center" style="font-size: 1.25rem;">
+    FMNIST
+  </p>
+  {% include table.html id="FMNIST" src=site.data.Fashion-MNIST published=true %}
+</section> -->
+
+
+<section class="container" id="CIFAR-10_heading">
+  <p class="text-center" style="font-size: 1.25rem;">
+    CIFAR-10 without public data
+  </p>
+  {% include table.html id="CIFAR-10-no" src=site.data._CIFAR-10.CIFAR10_no published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    CIFAR-10 with ImageNet 1k
+  </p>
+  {% include table.html id="CIFAR-10-IN1k" src=site.data._CIFAR-10.CIFAR10_IN1K published=true %}
+<!-- 
+  <p class="text-center" style="font-size: 1.25rem;">
+    CIFAR-10 with DataComp-1B
+  </p>
+  {% include table.html id="CIFAR-10-DC1B" src=site.data._CIFAR-10.CIFAR10_DC1B published=true %} -->
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    CIFAR-10 with anything goes
+  </p>
+  {% include table_any.html id="CIFAR-10-any" src=site.data._CIFAR-10.CIFAR10_any published=true %}
+</section>
+
+<section class="container" id="IMAGENET_heading"> <!-- IMAGENET -->
+  <p class="text-center" style="font-size: 1.25rem;">
+    ImageNet without public data
+  </p>
+  {% include table.html id="IMAGENET" src=site.data._ImageNet.ImageNet_no published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    ImageNet with public DataComp-1B
+  </p>
+  {% include table.html id="IMAGENET-DC1B" src=site.data._ImageNet.ImageNet_DC1B published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    ImageNet with anything goes
+  </p>
+  {% include table_any.html id="IMAGENET-ANY" src=site.data._ImageNet.ImageNet_any published=true %}
+</section>
+
+<!-- <section class="container" id="ImageNet_CIFAR-100_heading"></section>
+  <p class="text-center" style="font-size: 1.25rem;">
+    CIFAR-100 (with public ImageNet-1K)
+  </p>
+  {% include table.html id="ImageNet_CIFAR-100" src=site.data.ImageNet-CIFAR100 published=true %}
+</section> -->
+
+<!-- <section class="container" id="JFT300M_Places365_heading"></section>
+  <p class="text-center" style="font-size: 1.25rem;">
+    Places365 (with public JFT300M)
+  </p>
+  {% include table.html id="JFT300M_Places365" src=site.data.JFT300M-Places365 published=true %}
+</section> -->
+
+<section class="container" id="CheXpert_heading">
+  <p class="text-center" style="font-size: 1.25rem;">
+    CheXpert without public data
+  </p>
+  {% include table.html id="CheXpert" src=site.data._CheXpert.CheXpert_no published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    CheXpert with ImageNet 1k
+  </p>
+  {% include table.html id="CheXpert-IN1K" src=site.data._CheXpert.CheXpert_IN1K published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    CheXpert with anything goes
+  </p>
+  {% include table_any.html id="CheXpert-ANY" src=site.data._CheXpert.CheXpert_any published=true %}
+</section>
+
+<section class="container" id="EyePACS_heading">
+  <p class="text-center" style="font-size: 1.25rem;">
+    EyePACS without public data
+  </p>
+  {% include table.html id="EyePACS" src=site.data._EyePACS.EyePACS_no published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    EyePACS with ImageNet 1k
+  </p>
+  {% include table.html id="EyePACS-IN1K" src=site.data._EyePACS.EyePACS_IN1K published=true %}
+
+  <p class="text-center" style="font-size: 1.25rem;">
+    EyePACS with anything goes
+  </p>
+  {% include table_any.html id="EyePACS-ANY" src=site.data._EyePACS.EyePACS_any published=true %}
+</section>
+  
+<script>
+  $(document).ready(function() {
+    // initializeDataTable("MNIST");
+    // initializeDataTable("FMNIST");
+
+    //CIFAR-10:
+    initializeDataTable("CIFAR-10-no");
+    initializeDataTable("CIFAR-10-IN1k");
+    // initializeDataTable("CIFAR-10-DC1B");
+    initializeDataTable("CIFAR-10-any");
+
+    //CheXpert
+    initializeDataTable("CheXpert");
+    initializeDataTable("CheXpert-IN1K");
+    initializeDataTable("CheXpert-ANY");
+
+    //EyePACS
+    initializeDataTable("EyePACS");
+    initializeDataTable("EyePACS-IN1K");
+    initializeDataTable("EyePACS-ANY");
+
+    //ImageNet
+    initializeDataTable("IMAGENET")
+    initializeDataTable("IMAGENET-ANY");
+    initializeDataTable("IMAGENET-DC1B");
+
+    // initializeDataTable("ImageNet_CIFAR-100");
+    // initializeDataTable("JFT300M_Places365");
+    // initializeDataTable("ImageNet_CheXpert");
+  });
+</script>
